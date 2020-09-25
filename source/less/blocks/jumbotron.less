@@ -1,0 +1,53 @@
+.jumbotron {
+  position: relative;
+  z-index: 20;
+  margin: 0 auto 100px;
+  padding: 0 30px;
+  background: @color-blue url("../img/bg-head-mobile@1x.jpg") no-repeat center top;
+  background-size: 768px auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-head-mobile@2x.jpg");
+  }
+}
+
+.jumbotron__title {
+  margin: 0;
+  padding: 80px 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .jumbotron {
+    width: 760px;
+    background-image: url("../img/bg-head-tablet@1x.jpg");
+    background-position: center top;
+    background-size: 1200px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-head-tablet@2x");
+    }
+  }
+
+  .jumbotron__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .jumbotron {
+    width: 1180px;
+    background-image: url("../img/bg-head-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-head-desktop@2x.jpg");
+    }
+  }
+
+  .jumbotron__title {
+    font-size: 70px;
+  }
+}
