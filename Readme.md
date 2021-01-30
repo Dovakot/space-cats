@@ -1,6 +1,24 @@
-#### Пример сборки для младшего братишки.
+## Пример сборки для младшенького <img width="25" alt="" src="https://github.githubassets.com/images/icons/emoji/unicode/1f423.png">
 
-Котики живут на THE WORLD 
-IT'S ME DIO, HELLO
+---
 
- [space-cats](https://dovakot.github.io/space-cats/)
+### Памятка
+
+Скачать и установить node.js и npm
+
+Установить плагин editorconfig
+
+Установить плагин stylelint/eslint для вашего редактора
+
+
+##### Для работы с проектом пригодятся следующие команды:
+
+npm i — эта команда скачивает и устанавливает все необходимые зависимости проекта (необходимо выполнить как минимум один раз)
+
+npm test — эта команда запускает проверки StyleLint/ESLint
+
+npm start — эта команда собирает проект в папку build и открывает страницу с собранным проектом
+
+---
+ 
+### Котики тут &#8658;  [space-cats](https://dovakot.github.io/space-cats/)
