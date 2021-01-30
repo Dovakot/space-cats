@@ -3,6 +3,10 @@
 
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .social__item:not(:last-child) {
@@ -11,12 +15,15 @@
 
 .social__title {
   margin: 0 0 15px;
+
   font-weight: 600;
 }
 
 .social__link {
   display: block;
+
   border-radius: 6px;
+
   transition: all 0.3s ease-in-out;
 
   svg {
@@ -29,11 +36,5 @@
 
   &:active {
     opacity: 0.5;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .social__list {
-    justify-content: flex-start;
   }
 }

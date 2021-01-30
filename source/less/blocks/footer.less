@@ -1,22 +1,23 @@
 .footer {
   padding: 70px 30px 50px;
+
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    text-align: left;
+  }
 }
 
 .footer__copyright {
   margin: 30px 0 0;
+
   font-weight: 600;
-}
 
-@media (min-width: @tablet-width) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: left;
-  }
-
-  .footer__copyright {
-    margin: 0;
+  @media (min-width: @tablet-width) {
+    margin: 0 0 14px;
   }
 }

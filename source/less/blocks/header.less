@@ -1,10 +1,14 @@
 .header {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: relative;
+  padding: 50px 20px 90px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
 
   &--donate::before:hover {
     top: 180px;
@@ -22,10 +26,12 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
     right: 0;
-    height: 2px;
-    background-color: #008000;
+    left: 0;
+
+    height: 1px;
+
+    box-shadow: 0 0 6px 0 #008000, 0 0 1px 0 rgba(0, 128, 0, 0.3) inset;
     opacity: 0;
   }
 
@@ -47,13 +53,17 @@
 }
 
 .header__icon-cat {
-  display: none;
   position: absolute;
-  top: 160px;
+  top: 205px;
   left: 50%;
   z-index: 10;
+
+  display: block;
   margin: 0 0 0 -130px;
 
+  @media (min-width: @desktop-width) {
+    top: 190px;
+  }
 
   img {
     transition: all 0.3s ease-in-out;
@@ -65,21 +75,15 @@
 }
 
 .header__logo-image {
-  width: 150px;
-}
+  display: block;
+  width: 120px;
 
-@media (min-width: @tablet-width) {
-  .header__icon-cat {
-    display: block;
+  @media (min-width: @tablet-width) {
+    width: 160px;
   }
 
-  .header__logo-image {
-    display: block;
+  @media (min-width: @tablet-width) {
     width: 200px;
-  }
-
-  .header {
-    justify-content: space-between;
   }
 }
 

@@ -6,17 +6,23 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   min-width: 320px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
-  line-height: 1.48;
-  color: @color-default;
-  font-size: 14px;
+
   font-weight: 300;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.48;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: @color-default;
 }
 
 img {
